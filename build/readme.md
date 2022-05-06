@@ -1,3 +1,5 @@
 # version 1
-student version -  Created Tabs, (attend, subjects, profile)
-============================================================
+------------------------------------------------------------
+
+**student version -  Created Tabs, (attend, subjects, profile)
+============================================================**
