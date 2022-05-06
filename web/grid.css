@@ -1,0 +1,33 @@
+.cell{
+    border: 1px solid #67529e;
+    margin: 0px;
+    background: #2A2550;
+    color: white;
+    width: 100px !important;
+    height: 30px;
+    cursor: none;
+}
+
+input.cell:hover{
+    border: 1px solid #251D3A;
+    margin: 0px;
+    background: #2A2550;
+    width: 100px !important;
+    height: 30px;
+    color: #FF7700;
+    background-color: aliceblue;
+}
+
+.row{
+    display: flex;
+    width: 1000vw;
+}
+
+.grid{
+    width: 100vw;
+    background-color: #251D3A;
+    height: 90vh;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    
+}
