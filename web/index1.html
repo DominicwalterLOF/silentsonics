@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,45 @@
     <title>Document</title>
     <link rel="stylesheet" href="./grid.css">
 </head>
+
 <body>
-    <div class="navbar"></div>
+    <div class="bottomModalContainer" id="mcm" style="display: block;">
+    </div>
+
+    <div class="overlay glassFrost" style="display: none;" id="overlay">
+        <div class="modal">
+            <div class="navbar"></div>
+        </div>
+    </div>
+    <div class="navbar">
+        <div>
+            <h1 class="title">SILENT SONICS</h1>
+            <hr>
+        </div>
+        <div class="toolbar">
+            <button id="export">EXPORT</button>
+            <button id="tools">TOOLS</button>
+            <button id="filter">FILTER</button>
+            <button id="settings">SETTINGS</button>
+        </div>
+        <div class="userCard">
+            Welcome User
+            <div class="userImg"></div>
+        </div>
+    </div>
     <div class="main">
-        <div class="sidebar" id = "cls">
-<div class="classCard"></div>
-<div class="classCard"></div>
-<div class="classCard"></div>
+        <div class="sidebar" id="cls">
+            <div class="classCard"></div>
+            <div class="classCard"></div>
+            <div class="classCard"></div>
         </div>
         <div class="sheet">
-            <div class="grid" id= "main" >
+            <div class="grid" id="main">
             </div>
-            
+
         </div>
     </div>
     <script src="./grid.js"></script>
 </body>
+
 </html>

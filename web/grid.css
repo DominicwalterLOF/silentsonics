@@ -1,4 +1,4 @@
-.cell{
+.cell {
     border: 1px solid #67529e;
     margin: 0px;
     background: #2A2550;
@@ -9,85 +9,169 @@
     padding: 5px;
 }
 
-input.cell:hover{
+input.cell:hover {
     color: #FF7700;
     background-color: aliceblue;
 }
 
-.row{
+.row {
     display: flex;
     width: 1000vw;
 }
 
-.grid{
+.grid {
     width: 100vw;
     background-color: #251D3A;
     height: 90vh;
     overflow-x: scroll;
     overflow-y: scroll;
-    
+
 }
 
-.navbar{
+.navbar {
     height: 100px;
     width: 100%;
-    background-color:#251D3A;
+    background-color: #251D3A;
+    display: flex;
+    color: white;
 }
 
-.main{
+.main {
     display: flex;
 }
 
-.sidebar{
+.sidebar {
     width: 20%;
+    background-color: #ffffff;
 }
 
-.sheet{
+.sheet {
     width: 80%;
     height: 100vh;
-    background-color:#2A2550;
+    background-color: #2A2550;
     overflow-x: hidden;
 }
 
-.Name{
-width: 200px !important;
-background-color: #4d3f71;
+.Name {
+    width: 200px !important;
+    background-color: #4d3f71;
 }
 
-.classCard{
+.classCard {
     width: calc(100% - 20px);
     height: 150px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 10px;
     margin: 10px;
+    background-color: #4d3f71;
 }
 
 .classCard:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    background-color: #67529e;
+}
 
-body{
+body {
     padding: 0px;
     margin: 0px;
     overflow: hidden;
 }
 
-.rowNumber{
-    background-color:#251D3A;
+.rowNumber {
+    background-color: #251D3A;
     width: 40px !important;
-    border:#4d3f71 1px solid;
+    border: #4d3f71 1px solid;
     text-align: center;
     cursor: pointer;
-    
+
 }
-.colNumber{
-    background-color:#251D3A;
+
+.title {
+    margin: 20px;
+}
+
+.colNumber {
+    background-color: #251D3A;
     width: 100px !important;
-    border:#4d3f71 1px solid;
+    border: #4d3f71 1px solid;
     text-align: center;
 }
 
-.init{
-    width: 250px !important;
+.init {
+    width: 252px !important;
 }
+
+.toolbar button {
+    background-color: #251D3A;
+    margin: 20px;
+    color: white;
+    border: none;
+}
+
+.userCard {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: end;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+.userImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #67529e;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.overlay{
+    position: absolute;
+    z-index: 3;
+    height: 100vh;
+    width: 100vw;
+}
+
+.glassFrost{
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    background-color:#68529e80;
+    backdrop-filter: blur(3px);
+  }
+
+.modal{
+    position: absolute;
+    background-color: white;
+    border-radius: 15px;
+    width: 50%;
+    height: 60%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.bottomModalContainer{
+    display: block; 
+    position: absolute;
+    bottom: 40px;
+    z-index: 500;
+    width: 400px;
+    right: 10px;
+    display: table-cell;
+    vertical-align: bottom;
+  }
+
+  .tomsg{
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+  }
+
+  .whiteLine{
+      border: 1px solid white;
+  }

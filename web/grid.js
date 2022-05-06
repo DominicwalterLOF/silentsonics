@@ -20,9 +20,86 @@ for (let r = 0; r < rows; r++) {
     rr += "<div class = 'row'>" + inn + "</div>"
 }
 
-document.getElementById("main").innerHTML = rr;
+d("main").innerHTML = rr;
 
 
 for (let i = 0; i < 5; i++) {
-    document.getElementById("cls").innerHTML += "<div class = 'classCard></div>'";
+    d("cls").innerHTML += "<div class = 'classCard></div>'";
+}
+
+function toggleOverlay(){
+    var o = d("overlay").style.display;
+    if (o == "none") {
+        d("overlay").style.display = "block";
+    }
+    else{
+        d("overlay").style.display = "none";
+    }
+}
+
+function d(e){
+    return document.getElementById(e);
+}
+
+
+function returnToast(toastMessage, bcolor, tcounter) {
+    tm = '<div class="tomsg glassFrost" id = "modalContainer' + tcounter;
+    tm += '"><p style="color: white;">Server ::::</p><div class="whiteLine" style="border-color: white; height: 1px; width: 30%; margin:4px; margin-left: 0px;"></div><p id = "toastCont">';
+    tm += toastMessage + '</p></div>';
+
+    return tm;
+}
+
+var toastCount = 0;
+
+function showToast(toastMessage, bbcolor, time) {
+
+    if (true) {
+
+        if (bbcolor == 1) {
+            var xc = "greenyellow";
+        }
+        else if (bbcolor == 2) {
+            var xc = "red";
+        }
+
+        toastCount = toastCount + 1;
+
+        toastRAW = returnToast(toastMessage, xc, toastCount);
+
+        renderToast(toastRAW, toastCount, time);
+
+    }
+
+
+}
+
+function renderToast(toastRAW, tcnt, timeTo) {
+    d("mcm").innerHTML += toastRAW;
+
+    setTimeout(() => {
+        d("modalContainer" + tcnt).style.display = "none";
+    }, timeTo * 1000)
+}
+
+
+function fadeFrost() {
+    let box = document.getElementById('frostOverlay');
+
+    if (box.classList.contains('hidden')) {
+        box.classList.remove('hidden');
+        setTimeout(function () {
+            box.classList.remove('visuallyhidden');
+        }, 20);
+    } else {
+        box.classList.add('visuallyhidden');
+        box.addEventListener('transitionend', function (e) {
+            box.classList.add('hidden');
+        }, {
+            capture: false,
+            once: true,
+            passive: false
+        });
+    }
+
 }
