@@ -1317,6 +1317,11 @@ public class SearchView extends LinearLayoutCompat implements CollapsibleActionV
 
     /*  JADX ERROR: NullPointerException in pass: CodeShrinkVisitor
         java.lang.NullPointerException
+        	at jadx.core.dex.instructions.args.InsnArg.wrapInstruction(InsnArg.java:118)
+        	at jadx.core.dex.visitors.shrink.CodeShrinkVisitor.inline(CodeShrinkVisitor.java:146)
+        	at jadx.core.dex.visitors.shrink.CodeShrinkVisitor.shrinkBlock(CodeShrinkVisitor.java:71)
+        	at jadx.core.dex.visitors.shrink.CodeShrinkVisitor.shrinkMethod(CodeShrinkVisitor.java:43)
+        	at jadx.core.dex.visitors.shrink.CodeShrinkVisitor.visit(CodeShrinkVisitor.java:35)
         */
     void launchQuerySearch(int r14, java.lang.String r15, java.lang.String r16) {
         /*

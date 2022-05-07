@@ -161,30 +161,30 @@ public class StackMapTableAttr extends MiscAttr {
             this.encodedStack[i5] = encodeVerificationType(t, code);
             i3++;
         }
-        int i6 = curLocalsCount - this.countLocals;
-        if (!compressStackMapTable || i6 != 0 || curLocalsCount != unchangedLocals || curStackCount > 1) {
+        int localsDelta = curLocalsCount - this.countLocals;
+        if (!compressStackMapTable || localsDelta != 0 || curLocalsCount != unchangedLocals || curStackCount > 1) {
             if (compressStackMapTable && curStackCount == 0) {
-                if (curLocalsCount < this.countLocals && unchangedLocals == curLocalsCount && i6 >= -3) {
-                    put1(Telnet.WILL + i6);
+                if (curLocalsCount < this.countLocals && unchangedLocals == curLocalsCount && localsDelta >= -3) {
+                    put1(Telnet.WILL + localsDelta);
                     put2(offset_delta);
                 }
             }
-            if (!compressStackMapTable || curStackCount != 0 || this.countLocals != unchangedLocals || i6 > 3) {
+            if (!compressStackMapTable || curStackCount != 0 || this.countLocals != unchangedLocals || localsDelta > 3) {
                 put1(255);
                 put2(offset_delta);
                 put2(curLocalsCount);
-                for (int i7 = 0; i7 < curLocalsCount; i7++) {
-                    emitVerificationType(this.encodedLocals[i7]);
+                for (int i6 = 0; i6 < curLocalsCount; i6++) {
+                    emitVerificationType(this.encodedLocals[i6]);
                 }
                 put2(curStackCount);
-                for (int i8 = 0; i8 < curStackCount; i8++) {
-                    emitVerificationType(this.encodedStack[i8]);
+                for (int i7 = 0; i7 < curStackCount; i7++) {
+                    emitVerificationType(this.encodedStack[i7]);
                 }
             } else {
-                put1(Telnet.WILL + i6);
+                put1(Telnet.WILL + localsDelta);
                 put2(offset_delta);
-                for (int i9 = 0; i9 < i6; i9++) {
-                    emitVerificationType(this.encodedLocals[unchangedLocals + i9]);
+                for (int i8 = 0; i8 < localsDelta; i8++) {
+                    emitVerificationType(this.encodedLocals[unchangedLocals + i8]);
                 }
             }
         } else if (curStackCount != 0) {

@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 
 Name: AndroidManifest.xml
-SHA-256-Digest: b0hXC41p65yoqtOEbZ/1279MmEpt0zZggpX+DCPeruI=
+SHA-256-Digest: nVc4Wf/cZDl5i4dohRj1eZShXlX+oBvVr+jYMWpRde8=
 
 Name: assets/22000Hz_sine.wav
 SHA-256-Digest: nsA1181mKhfBXpax3oLWshwHoBUgJAKAwz9yEnXRFto=
@@ -61,7 +61,7 @@ Name: assets/search.json
 SHA-256-Digest: /92uO1kIV+hTGIzYariGg/0T49bS2eBPXG9TfqjtRFw=
 
 Name: classes.dex
-SHA-256-Digest: 9Q/4ewJX2mAzC490SFuYSl/t0rDtiN1UKSIrh85/Ub0=
+SHA-256-Digest: PxWHr0XhrlaBVFN0sa9XpqqOcxT3JdesE3uaU58Iego=
 
 Name: classes2.dex
 SHA-256-Digest: dicVtmq1FPhfZBf2+b0hVCK0gxpJQTOkjWKydxCtr2c=

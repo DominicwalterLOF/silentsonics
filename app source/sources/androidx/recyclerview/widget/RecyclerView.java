@@ -5283,9 +5283,9 @@ public class RecyclerView extends ViewGroup implements ScrollingView, NestedScro
                     viewGroup2.setVisibility(4);
                     return;
                 }
-                int i2 = viewGroup2.getVisibility();
+                int visibility = viewGroup2.getVisibility();
                 viewGroup2.setVisibility(4);
-                viewGroup2.setVisibility(i2);
+                viewGroup2.setVisibility(visibility);
             }
         }
 
@@ -5739,9 +5739,9 @@ public class RecyclerView extends ViewGroup implements ScrollingView, NestedScro
                 this.mAttachedScrap.get(i2).clearOldPosition();
             }
             if (this.mChangedScrap != null) {
-                int i3 = this.mChangedScrap.size();
-                for (int i4 = 0; i4 < i3; i4++) {
-                    this.mChangedScrap.get(i4).clearOldPosition();
+                int changedScrapCount = this.mChangedScrap.size();
+                for (int i3 = 0; i3 < changedScrapCount; i3++) {
+                    this.mChangedScrap.get(i3).clearOldPosition();
                 }
             }
         }

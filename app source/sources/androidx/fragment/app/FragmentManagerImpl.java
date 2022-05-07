@@ -2249,9 +2249,9 @@ final class FragmentManagerImpl extends FragmentManager implements LayoutInflate
                 for (int i2 = 0; i2 < numAdded; i2++) {
                     moveFragmentToExpectedState(this.mAdded.get(i2));
                 }
-                int i3 = this.mActive.size();
-                for (int i4 = 0; i4 < i3; i4++) {
-                    Fragment f = this.mActive.valueAt(i4);
+                int numActive = this.mActive.size();
+                for (int i3 = 0; i3 < numActive; i3++) {
+                    Fragment f = this.mActive.valueAt(i3);
                     if (f != null && ((f.mRemoving || f.mDetached) && !f.mIsNewlyAdded)) {
                         moveFragmentToExpectedState(f);
                     }

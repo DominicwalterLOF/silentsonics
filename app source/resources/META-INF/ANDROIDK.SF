@@ -1,10 +1,10 @@
 Signature-Version: 1.0
 Created-By: 1.0 (Android)
-SHA-256-Digest-Manifest: 39Bh8U3wCwo8jRX1w3Ccg5mlU9ue6NyRsNMX2PgeRsA=
+SHA-256-Digest-Manifest: rfmIHalBqtYx5jJmgJ11DC1G9SyOHZ9RO/Plhy6kalc=
 X-Android-APK-Signed: 2, 3
 
 Name: AndroidManifest.xml
-SHA-256-Digest: oe6rOLLZbifcqpaS6NlOKyg5WrCoCcuhchd4yv55zn4=
+SHA-256-Digest: Ywo579tUds18ANi1/BVeVuHuZ5QFK3z6AvWEtStW3Ps=
 
 Name: assets/22000Hz_sine.wav
 SHA-256-Digest: 4tMT/x1/cMtIpqOuZdOydm8cJ13N63OTcchhp1axrdM=
@@ -64,7 +64,7 @@ Name: assets/search.json
 SHA-256-Digest: DDGDAuLY6m8EDs73poTN2MStAFlgehGjQgBMJg6VAPk=
 
 Name: classes.dex
-SHA-256-Digest: OEpkn57u6R68Wk43jIXLH5ZVSdLNV/2N3F91ssWP4Vk=
+SHA-256-Digest: aXzO6bb1apWmMY5UcMTA6wkPtjjpaw3A1U+naqEiS3M=
 
 Name: classes2.dex
 SHA-256-Digest: gPA4DJgISd3Ul0kipeKwSEuZvdNe797Xoj1vmFHX5L0=

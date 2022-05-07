@@ -1168,8 +1168,8 @@ public class CoordinatorLayout extends ViewGroup implements NestedScrollingParen
                 }
                 getChildRect(child, true, drawRect);
                 if (lp.insetEdge != 0 && !drawRect.isEmpty()) {
-                    int j2 = GravityCompat.getAbsoluteGravity(lp.insetEdge, layoutDirection);
-                    switch (j2 & 112) {
+                    int absInsetEdge = GravityCompat.getAbsoluteGravity(lp.insetEdge, layoutDirection);
+                    switch (absInsetEdge & 112) {
                         case 48:
                             inset.top = Math.max(inset.top, drawRect.bottom);
                             break;
@@ -1177,7 +1177,7 @@ public class CoordinatorLayout extends ViewGroup implements NestedScrollingParen
                             inset.bottom = Math.max(inset.bottom, getHeight() - drawRect.top);
                             break;
                     }
-                    switch (j2 & 7) {
+                    switch (absInsetEdge & 7) {
                         case 3:
                             inset.left = Math.max(inset.left, drawRect.right);
                             break;
@@ -1195,8 +1195,8 @@ public class CoordinatorLayout extends ViewGroup implements NestedScrollingParen
                         recordLastChildRect(child, drawRect);
                     }
                 }
-                for (int j3 = i2 + 1; j3 < childCount; j3++) {
-                    View checkChild = this.mDependencySortedChildren.get(j3);
+                for (int j2 = i2 + 1; j2 < childCount; j2++) {
+                    View checkChild = this.mDependencySortedChildren.get(j2);
                     LayoutParams checkLp = (LayoutParams) checkChild.getLayoutParams();
                     Behavior b = checkLp.getBehavior();
                     if (b != null && b.layoutDependsOn(this, checkChild, child)) {

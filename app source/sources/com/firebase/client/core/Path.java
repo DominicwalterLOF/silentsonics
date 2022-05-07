@@ -86,9 +86,9 @@ public class Path implements Iterable<ChildKey>, Comparable<Path> {
         this.pieces = new ChildKey[count];
         int j = 0;
         String[] arr$2 = segments;
-        int len$2 = arr$2.length;
-        for (int i$2 = 0; i$2 < len$2; i$2++) {
-            String segment = arr$2[i$2];
+        int i$2 = arr$2.length;
+        for (int i$3 = 0; i$3 < i$2; i$3++) {
+            String segment = arr$2[i$3];
             if (segment.length() > 0) {
                 int i = j;
                 j++;
