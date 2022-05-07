@@ -1,7 +1,13 @@
 Manifest-Version: 1.0
 
 Name: AndroidManifest.xml
-SHA-256-Digest: k9omDXtIjEjvEOCRQujA8cSFsss2uzmhqxYITw9MVKI=
+SHA-256-Digest: b0hXC41p65yoqtOEbZ/1279MmEpt0zZggpX+DCPeruI=
+
+Name: assets/22000Hz_sine.wav
+SHA-256-Digest: nsA1181mKhfBXpax3oLWshwHoBUgJAKAwz9yEnXRFto=
+
+Name: assets/806-search.json
+SHA-256-Digest: bwJjaBZqopsqBwiDxN99FtugJXCo2TNrKUu7OqfWl0A=
 
 Name: assets/89101-confirmed-tick.json
 SHA-256-Digest: 1kJnqFZSzjiGwQnIigJ7nw3srguZ/AundfcklmfJj78=
@@ -48,11 +54,17 @@ SHA-256-Digest: oD1Db34K4Bw/4tNzsAo11tuxw0FKzpkyI9peMEY7JKw=
 Name: assets/lf30_editor_9ps4nnxc.json
 SHA-256-Digest: tVIA50CQgUbiXVxvuqqQU72iDiNrC+5mcVd659CKrA8=
 
+Name: assets/radar.json
+SHA-256-Digest: D/pDgmnWue5/c7u6EkxmR/HdAXDk35TeHoyK392FFcw=
+
+Name: assets/search.json
+SHA-256-Digest: /92uO1kIV+hTGIzYariGg/0T49bS2eBPXG9TfqjtRFw=
+
 Name: classes.dex
-SHA-256-Digest: cINeNeggWEiRvDVezrrMPZwmRkDurjhEVvX4+5RpDew=
+SHA-256-Digest: 9Q/4ewJX2mAzC490SFuYSl/t0rDtiN1UKSIrh85/Ub0=
 
 Name: classes2.dex
-SHA-256-Digest: 3LcduekdcbmCug634ARWRYUN2MTFvfSX5GfPmTWxRtg=
+SHA-256-Digest: dicVtmq1FPhfZBf2+b0hVCK0gxpJQTOkjWKydxCtr2c=
 
 Name: classes3.dex
 SHA-256-Digest: jWKPq8d3wXCp0u031xMjd9c5Pc1QQ9XTcn/RRQIe4p4=
@@ -1380,7 +1392,7 @@ Name: res/drawable/tooltip_frame_light.xml
 SHA-256-Digest: HYWPqztR0hmG1h3WYioZlycI2juECxltp+Z+9IAC9oE=
 
 Name: res/drawable/ya.png
-SHA-256-Digest: 89f8RE3Pcey2qN27b6Nv/a6LY5DR6wgnFuWARNltg5c=
+SHA-256-Digest: 18AaElPLEUJuYrO9T5+Z92lTRhWYGmKK8fT9nOnUIJw=
 
 Name: res/interpolator-v21/mtrl_fast_out_linear_in.xml
 SHA-256-Digest: XJ2gQKimzaidiEI9Ihw47nqjaTj9egaVZnX1I7Vzf5c=
@@ -1650,49 +1662,49 @@ Name: res/mipmap-anydpi-v26/ic_launcher_round.xml
 SHA-256-Digest: zARNSGQALcM0TAkLpr1w0d9uxuk9+GqVt6pgconSKCg=
 
 Name: res/mipmap-hdpi-v4/ic_launcher.png
-SHA-256-Digest: KE1/6won1EhMxpqKmnZFa+KCG9dn73uVlQ9yKLesjM4=
+SHA-256-Digest: m0ALY3dQZkeEaOIhlxqkQLg6dYLZiqBCi/JtlR9iutg=
 
 Name: res/mipmap-hdpi-v4/ic_launcher_foreground.png
-SHA-256-Digest: JySp4jo7CYTt7WPrzKzVJzlpJeR+bcjPXnqYWfE9PWM=
+SHA-256-Digest: QsAH/magx9cPXzPL7E5gyWjhKjSMrFkOgPljbFkB7mo=
 
 Name: res/mipmap-hdpi-v4/ic_launcher_round.png
-SHA-256-Digest: 5mt+s5sfZ8UquOLMhBGU8W/a4p81euyZ+JAshXhRS2A=
+SHA-256-Digest: wyRZfXRuxSYTWfcy/FDAC9rF6JTx0pIajA2qKXMsYgg=
 
 Name: res/mipmap-mdpi-v4/ic_launcher.png
-SHA-256-Digest: mN5REYlKEfLIzIyq+MKnNNLPX+7PTfK/78K+/mnrKaE=
+SHA-256-Digest: Rsy75XXm9b+LLX3mOvkInwGJMrApXU3umIZ8KSdI4Xs=
 
 Name: res/mipmap-mdpi-v4/ic_launcher_foreground.png
-SHA-256-Digest: zEWPBT4VHI83nlAQvg+ySXl5duGtK8fNGDErxk9GDj0=
+SHA-256-Digest: wm/Hhv0a1GWRQKipNOW/WadEX8erd8abPdRhjIfacs8=
 
 Name: res/mipmap-mdpi-v4/ic_launcher_round.png
-SHA-256-Digest: Dm5qmstOZm6AR69vhGuYWS7aLLSB6XMR+KaMrQ6qOH0=
+SHA-256-Digest: nD5gfnPynVXIUpAGSPng3U5MKqeEN/U+zMPo7o6I02U=
 
 Name: res/mipmap-xhdpi-v4/ic_launcher.png
-SHA-256-Digest: fHQy/4oJGZ1M6ssC4sHqOvpt/ec96z4a8RHTHvvmhJQ=
+SHA-256-Digest: C95VFS2rZMJP0MZyf8f/jfFsUtrXuKU/AGqSAt7CABA=
 
 Name: res/mipmap-xhdpi-v4/ic_launcher_foreground.png
-SHA-256-Digest: 21GYZnRx4Gc+D794dbjBpV89lcRnfCP+6xTy5dtQxrc=
+SHA-256-Digest: ZuBxaJWcgVFl7td4XYNYLPSH2jR9q/uY5nhin7VNpMk=
 
 Name: res/mipmap-xhdpi-v4/ic_launcher_round.png
-SHA-256-Digest: SVOg8eLP/KV2Uq3QzLC41QH+oVaUfrYqCSQO9s0cBHE=
+SHA-256-Digest: S7c/Zap3nNX1Q6PsDzTgJ8aFqXab59HTiXLdbtV3Lyw=
 
 Name: res/mipmap-xxhdpi-v4/ic_launcher.png
-SHA-256-Digest: x2a4o5pcnwN+f5GDk3oxf9BbI8YPscvsd4ywVii8lkE=
+SHA-256-Digest: cR0mvtZW2dE6Uph45GX7qWWM/ItJ2Glu+j/2nvxZAjo=
 
 Name: res/mipmap-xxhdpi-v4/ic_launcher_foreground.png
-SHA-256-Digest: fMRakmVQRpd5DJ1XkwcOU4kQVAH/8ai/FWTVM6EB1T0=
+SHA-256-Digest: siTiDXY4c8dKfz2qcCt1F7SK3JadFa/aI0TAt9gRTOk=
 
 Name: res/mipmap-xxhdpi-v4/ic_launcher_round.png
-SHA-256-Digest: ZGnmxgqP4BIkcoX0fkpctC9q3K5ZOpg8KApZd8+uPXg=
+SHA-256-Digest: yq2hCt0Y2HO9Rqw3/vaYT08H5Bml49cLu33mG0TVDgw=
 
 Name: res/mipmap-xxxhdpi-v4/ic_launcher.png
-SHA-256-Digest: 4xrowOEIu2DREajJxGS/c49AqfPDMpqJENcYjG0Ab/o=
+SHA-256-Digest: 4W/EupJbP1u9bA8cHCmVP/THwoK/OixM+zTt0Qiblkw=
 
 Name: res/mipmap-xxxhdpi-v4/ic_launcher_foreground.png
-SHA-256-Digest: rVDVnxsDxTeN0rVbd9Ek6RJZVbukOlMoQHbiBbcQPI8=
+SHA-256-Digest: MUTdi2C2ydvnYRtb2Dm3rlMWnMfKUW5HiCJf2Cv/pyg=
 
 Name: res/mipmap-xxxhdpi-v4/ic_launcher_round.png
-SHA-256-Digest: kPigaqPAi+xE1habaytWwKAMrLOQwX0s8a3750RfJtw=
+SHA-256-Digest: ZoIofCjVYe3UqddOul/QpzFV8B5V5vkCwYqxTlbiSj8=
 
 Name: res/xml/network_security_config.xml
 SHA-256-Digest: 4TDY2hxy+4gTui2z7obX0NJBlZ8yKoTJlhvCLVTzNHI=

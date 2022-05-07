@@ -5283,9 +5283,9 @@ public class RecyclerView extends ViewGroup implements ScrollingView, NestedScro
                     viewGroup2.setVisibility(4);
                     return;
                 }
-                int visibility = viewGroup2.getVisibility();
+                int i2 = viewGroup2.getVisibility();
                 viewGroup2.setVisibility(4);
-                viewGroup2.setVisibility(visibility);
+                viewGroup2.setVisibility(i2);
             }
         }
 

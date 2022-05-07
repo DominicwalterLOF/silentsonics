@@ -5,7 +5,7 @@ import android.content.Context;
 import android.os.Handler;
 import android.view.View;
 import android.view.ViewGroup;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+import androidx.swiperefreshlayout.widget.C0012SwipeRefreshLayout;
 import com.google.appinventor.components.annotations.DesignerComponent;
 import com.google.appinventor.components.annotations.DesignerProperty;
 import com.google.appinventor.components.annotations.PropertyCategory;
@@ -22,7 +22,7 @@ import com.google.appinventor.components.runtime.util.YailList;
 @SimpleObject
 @DesignerComponent(category = ComponentCategory.LAYOUT_GENERAL, description = "", version = 2)
 @UsesLibraries(libraries = "swiperefreshlayout.jar, swiperefreshlayout.aar")
-public class MakeroidSwipeRefreshLayout extends AndroidViewComponent implements SwipeRefreshLayout.OnRefreshListener, ComponentContainer {
+public class MakeroidSwipeRefreshLayout extends AndroidViewComponent implements C0012SwipeRefreshLayout.OnRefreshListener, ComponentContainer {
     private boolean Al9x361S9LLe4YuJ2FYrCTKylxVrvlRhCPyJ97vxqAo0DGA2cpEUDnPNY8RXP1UW = true;
     private boolean NqI9fRlBp15rsxXeNmRjOrUuQwDxdaDY0xSQj1B7T50sMWnnasnmhTtbykVZmafW;
     private boolean WT81i4At6dHne14KPL5TcdNiShzKisif1ehRA81016Xex9QKtWws9m2RXtqd3wpA = false;
@@ -33,7 +33,7 @@ public class MakeroidSwipeRefreshLayout extends AndroidViewComponent implements 
     private ComponentContainer container;
     private Context context;
     private int horizontalAlignment;
-    private final SwipeRefreshLayout hxYOFxFjLpN1maJuWNxUV40nExCGxsxkDPOTgtzMu4zlZCQb3bPlKsXo1SYJg6ME;
+    private final C0012SwipeRefreshLayout hxYOFxFjLpN1maJuWNxUV40nExCGxsxkDPOTgtzMu4zlZCQb3bPlKsXo1SYJg6ME;
     private final ViewGroup mainLayout;
     private YailList sSQuIBUVrx5rcdxHqHgqC6bPLuuDnxnBF7e7BJeOxmxr54l6ArzFZvC3SGBTuUdt;
     private int verticalAlignment;

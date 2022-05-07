@@ -382,7 +382,7 @@ public abstract class BaseLayer implements DrawingContent, BaseKeyframeAnimation
                     this.maskBoundsRect.set(Math.min(this.maskBoundsRect.left, this.tempMaskBoundsRect.left), Math.min(this.maskBoundsRect.top, this.tempMaskBoundsRect.top), Math.max(this.maskBoundsRect.right, this.tempMaskBoundsRect.right), Math.max(this.maskBoundsRect.bottom, this.tempMaskBoundsRect.bottom));
                 }
             }
-            if (!rect2.intersect(this.maskBoundsRect)) {
+            if (rect2.intersect(this.maskBoundsRect) == 0) {
                 rect2.set(0.0f, 0.0f, 0.0f, 0.0f);
             }
         }

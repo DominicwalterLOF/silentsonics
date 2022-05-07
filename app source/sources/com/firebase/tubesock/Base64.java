@@ -102,35 +102,35 @@ public class Base64 {
                 pad++;
             }
         }
-        int i3 = (((sLen - sepCnt) * 6) >> 3) - pad;
-        byte[] dArr = new byte[i3];
+        int len = (((sLen - sepCnt) * 6) >> 3) - pad;
+        byte[] dArr = new byte[len];
         int s = 0;
         int d = 0;
-        while (d < i3) {
-            int i4 = 0;
+        while (d < len) {
+            int i3 = 0;
             int j = 0;
             while (j < 4) {
-                int i5 = s;
+                int i4 = s;
                 s++;
-                int c = IA[sArr[i5]];
+                int c = IA[sArr[i4]];
                 if (c >= 0) {
-                    i4 |= c << (18 - (j * 6));
+                    i3 |= c << (18 - (j * 6));
                 } else {
                     j--;
                 }
                 j++;
             }
-            int i6 = d;
+            int i5 = d;
             d++;
-            dArr[i6] = (byte) (i4 >> 16);
-            if (d < i3) {
-                int i7 = d;
+            dArr[i5] = (byte) (i3 >> 16);
+            if (d < len) {
+                int i6 = d;
                 d++;
-                dArr[i7] = (byte) (i4 >> 8);
-                if (d < i3) {
-                    int i8 = d;
+                dArr[i6] = (byte) (i3 >> 8);
+                if (d < len) {
+                    int i7 = d;
                     d++;
-                    dArr[i8] = (byte) i4;
+                    dArr[i7] = (byte) i3;
                 }
             }
         }
@@ -293,35 +293,35 @@ public class Base64 {
                 pad++;
             }
         }
-        int i3 = (((sLen - sepCnt) * 6) >> 3) - pad;
-        byte[] dArr = new byte[i3];
+        int len = (((sLen - sepCnt) * 6) >> 3) - pad;
+        byte[] dArr = new byte[len];
         int s = 0;
         int d = 0;
-        while (d < i3) {
-            int i4 = 0;
+        while (d < len) {
+            int i3 = 0;
             int j = 0;
             while (j < 4) {
-                int i5 = s;
+                int i4 = s;
                 s++;
-                int c = IA[sArr[i5] & Ev3Constants.Opcode.TST];
+                int c = IA[sArr[i4] & Ev3Constants.Opcode.TST];
                 if (c >= 0) {
-                    i4 |= c << (18 - (j * 6));
+                    i3 |= c << (18 - (j * 6));
                 } else {
                     j--;
                 }
                 j++;
             }
-            int i6 = d;
+            int i5 = d;
             d++;
-            dArr[i6] = (byte) (i4 >> 16);
-            if (d < i3) {
-                int i7 = d;
+            dArr[i5] = (byte) (i3 >> 16);
+            if (d < len) {
+                int i6 = d;
                 d++;
-                dArr[i7] = (byte) (i4 >> 8);
-                if (d < i3) {
-                    int i8 = d;
+                dArr[i6] = (byte) (i3 >> 8);
+                if (d < len) {
+                    int i7 = d;
                     d++;
-                    dArr[i8] = (byte) i4;
+                    dArr[i7] = (byte) i3;
                 }
             }
         }
@@ -435,35 +435,35 @@ public class Base64 {
                 pad++;
             }
         }
-        int i3 = (((sLen - sepCnt) * 6) >> 3) - pad;
-        byte[] dArr = new byte[i3];
+        int len = (((sLen - sepCnt) * 6) >> 3) - pad;
+        byte[] dArr = new byte[len];
         int s = 0;
         int d = 0;
-        while (d < i3) {
-            int i4 = 0;
+        while (d < len) {
+            int i3 = 0;
             int j = 0;
             while (j < 4) {
-                int i5 = s;
+                int i4 = s;
                 s++;
-                int c = IA[str2.charAt(i5)];
+                int c = IA[str2.charAt(i4)];
                 if (c >= 0) {
-                    i4 |= c << (18 - (j * 6));
+                    i3 |= c << (18 - (j * 6));
                 } else {
                     j--;
                 }
                 j++;
             }
-            int i6 = d;
+            int i5 = d;
             d++;
-            dArr[i6] = (byte) (i4 >> 16);
-            if (d < i3) {
-                int i7 = d;
+            dArr[i5] = (byte) (i3 >> 16);
+            if (d < len) {
+                int i6 = d;
                 d++;
-                dArr[i7] = (byte) (i4 >> 8);
-                if (d < i3) {
-                    int i8 = d;
+                dArr[i6] = (byte) (i3 >> 8);
+                if (d < len) {
+                    int i7 = d;
                     d++;
-                    dArr[i8] = (byte) i4;
+                    dArr[i7] = (byte) i3;
                 }
             }
         }

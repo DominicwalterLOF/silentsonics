@@ -400,12 +400,12 @@ public class ActionMenuView extends LinearLayoutCompat implements MenuBuilder.It
             }
         }
         if (childCount != 1 || hasOverflow) {
-            int spacerCount = nonOverflowCount - (hasOverflow ? 0 : 1);
-            int spacerSize = Math.max(0, spacerCount > 0 ? widthRemaining / spacerCount : 0);
+            int i6 = nonOverflowCount - (hasOverflow ? 0 : 1);
+            int spacerSize = Math.max(0, i6 > 0 ? widthRemaining / i6 : 0);
             if (isLayoutRtl) {
                 int startRight = getWidth() - getPaddingRight();
-                for (int i6 = 0; i6 < childCount; i6++) {
-                    View v2 = getChildAt(i6);
+                for (int i7 = 0; i7 < childCount; i7++) {
+                    View v2 = getChildAt(i7);
                     LayoutParams lp = (LayoutParams) v2.getLayoutParams();
                     if (v2.getVisibility() != 8 && !lp.isOverflowButton) {
                         int startRight2 = startRight - lp.rightMargin;
@@ -419,8 +419,8 @@ public class ActionMenuView extends LinearLayoutCompat implements MenuBuilder.It
                 return;
             }
             int startLeft = getPaddingLeft();
-            for (int i7 = 0; i7 < childCount; i7++) {
-                View v3 = getChildAt(i7);
+            for (int i8 = 0; i8 < childCount; i8++) {
+                View v3 = getChildAt(i8);
                 LayoutParams lp2 = (LayoutParams) v3.getLayoutParams();
                 if (v3.getVisibility() != 8 && !lp2.isOverflowButton) {
                     int startLeft2 = startLeft + lp2.leftMargin;
