@@ -13,3 +13,9 @@ Added animations, organised layouts, added icons and changed prroject package na
 ------------------------------------------------------------
 
 Added Fingerprint authentication, complelted attendance recording, started with attendance validation
+
+
+# version 4
+-------------------------------------------------------------
+
+Bug fixes
