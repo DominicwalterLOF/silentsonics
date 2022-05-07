@@ -28,6 +28,8 @@ input.cell:hover {
     height: 90vh;
     overflow-x: scroll;
     overflow-y: scroll;
+    opacity: 1;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #251D3A 10px ), repeating-linear-gradient( #2a255055, #2a2550 );
 
 }
 
@@ -58,6 +60,8 @@ input.cell:hover {
 .Name {
     width: 200px !important;
     background-color: #4d3f71;
+    position: sticky;
+    left: 52px;
 }
 
 .classCard {
@@ -84,12 +88,15 @@ body {
 }
 
 .rowNumber {
+    position: sticky;
     background-color: #251D3A;
     width: 40px !important;
+    min-width: 40px !important;
     border: #4d3f71 1px solid;
     text-align: center;
     cursor: pointer;
-
+    left: 0px;
+    z-index: 4;
 }
 
 .title {
@@ -97,14 +104,24 @@ body {
 }
 
 .colNumber {
+    
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px !important;
+    z-index: 10;
     background-color: #251D3A;
     width: 100px !important;
+    min-width: 100px !important;
     border: #4d3f71 1px solid;
     text-align: center;
+    
 }
 
 .init {
     width: 252px !important;
+    min-width: 189px !important;
+    position: sticky;
+    left: 0px;
 }
 
 .toolbar button {
@@ -179,4 +196,8 @@ body {
 
   .whiteLine{
       border: 1px solid white;
+  }
+
+  .mob{
+      width: 100vw;
   }

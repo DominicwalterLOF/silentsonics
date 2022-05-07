@@ -1,5 +1,5 @@
 var cols = 30;
-var rows = 10;
+var rows = 100;
 var rr = ""
 for (let r = 0; r < rows; r++) {
     var inn = "<div class = 'cell rowNumber' >" + r + "</div><input class= 'cell Name' value = 'NAME " + r + "' id = '" + r + "aN" + "'>"
