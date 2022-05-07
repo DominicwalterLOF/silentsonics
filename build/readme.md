@@ -8,3 +8,8 @@
 ------------------------------------------------------------
 
 Added animations, organised layouts, added icons and changed prroject package name 
+
+# version 3
+------------------------------------------------------------
+
+Added Fingerprint authentication, complelted attendance recording, started with attendance validation
