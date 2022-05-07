@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+    $(function(){
+        $("#gridContent").load("grid.html"); 
+      });
+      </script>
 </head>
 <body bgcolor="#271e3b">
     <div class="top">
@@ -75,9 +82,9 @@
             </div>
         
     </div>
-    <div class="grid">
+    <div id="gridContent">
+
     </div>
 </div>
-    <script src="grid.js"></script>
     </body>
 </html>
