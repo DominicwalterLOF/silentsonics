@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" android:installLocation="auto" android:compileSdkVersion="30" android:compileSdkVersionCodename="11" package="com.loflabs.silentsonics" platformBuildVersionCode="30" platformBuildVersionName="11">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="30"/>
+    <application android:theme="@style/AppTheme" android:label="SilentSonics" android:icon="@mipmap/ic_launcher" android:name="com.google.appinventor.components.runtime.multidex.MultiDexApplication" android:debuggable="false" android:supportsRtl="false" android:usesCleartextTraffic="true" android:networkSecurityConfig="@xml/network_security_config" android:roundIcon="@mipmap/ic_launcher" android:requestLegacyExternalStorage="true">
+        <activity android:theme="@style/AppTheme.NoActionBar" android:name="io.kodular.t_dominicwalter.SilentSonics.Login" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:name="io.kodular.t_dominicwalter.SilentSonics.ttake" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:name="io.kodular.t_dominicwalter.SilentSonics.stake" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:name="io.kodular.t_dominicwalter.SilentSonics.Screen1" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="io.kodular.app.VERSION" android:value="1.5.4-Fenix"/>
+        <provider android:name="androidx.core.content.FileProvider" android:exported="false" android:authorities="com.loflabs.silentsonics.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+    </application>
+</manifest>
