@@ -120,7 +120,7 @@ a{
     color: #fff;
   }
 
-.navbar1{
+.navigation{
     display: flex;
     justify-content: space-between;
 }
