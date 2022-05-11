@@ -514,27 +514,27 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
                     maxSize = Math.max(maxSize, size);
                 }
             }
-            int i2 = this.mSizePerSpan;
+            int before = this.mSizePerSpan;
             int desired = Math.round(maxSize * ((float) this.mSpanCount));
             if (this.mSecondaryOrientation.getMode() == Integer.MIN_VALUE) {
                 desired = Math.min(desired, this.mSecondaryOrientation.getTotalSpace());
             }
             updateMeasureSpecs(desired);
-            if (this.mSizePerSpan != i2) {
-                for (int i3 = 0; i3 < childCount; i3++) {
-                    View child2 = getChildAt(i3);
+            if (this.mSizePerSpan != before) {
+                for (int i2 = 0; i2 < childCount; i2++) {
+                    View child2 = getChildAt(i2);
                     LayoutParams lp = (LayoutParams) child2.getLayoutParams();
                     if (!lp.mFullSpan) {
                         if (!isLayoutRTL() || this.mOrientation != 1) {
                             int newOffset = lp.mSpan.mIndex * this.mSizePerSpan;
-                            int prevOffset = lp.mSpan.mIndex * i2;
+                            int prevOffset = lp.mSpan.mIndex * before;
                             if (this.mOrientation == 1) {
                                 child2.offsetLeftAndRight(newOffset - prevOffset);
                             } else {
                                 child2.offsetTopAndBottom(newOffset - prevOffset);
                             }
                         } else {
-                            child2.offsetLeftAndRight(((-((this.mSpanCount - 1) - lp.mSpan.mIndex)) * this.mSizePerSpan) - ((-((this.mSpanCount - 1) - lp.mSpan.mIndex)) * i2));
+                            child2.offsetLeftAndRight(((-((this.mSpanCount - 1) - lp.mSpan.mIndex)) * this.mSizePerSpan) - ((-((this.mSpanCount - 1) - lp.mSpan.mIndex)) * before));
                         }
                     }
                 }

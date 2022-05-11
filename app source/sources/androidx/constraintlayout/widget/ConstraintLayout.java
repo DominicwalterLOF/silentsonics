@@ -519,20 +519,20 @@ public class ConstraintLayout extends ViewGroup {
             this.mConstraintSet.applyToInternal(this);
         }
         this.mLayoutWidget.removeAllChildren();
-        int i4 = this.mConstraintHelpers.size();
-        if (i4 > 0) {
-            for (int i5 = 0; i5 < i4; i5++) {
-                this.mConstraintHelpers.get(i5).updatePreLayout(this);
+        int helperCount = this.mConstraintHelpers.size();
+        if (helperCount > 0) {
+            for (int i4 = 0; i4 < helperCount; i4++) {
+                this.mConstraintHelpers.get(i4).updatePreLayout(this);
             }
         }
-        for (int i6 = 0; i6 < count; i6++) {
-            View child2 = getChildAt(i6);
+        for (int i5 = 0; i5 < count; i5++) {
+            View child2 = getChildAt(i5);
             if (child2 instanceof Placeholder) {
                 ((Placeholder) child2).updatePreLayout(this);
             }
         }
-        for (int i7 = 0; i7 < count; i7++) {
-            View child3 = getChildAt(i7);
+        for (int i6 = 0; i6 < count; i6++) {
+            View child3 = getChildAt(i6);
             ConstraintWidget widget2 = getViewWidget(child3);
             if (widget2 != null) {
                 LayoutParams layoutParams = (LayoutParams) child3.getLayoutParams();
@@ -803,10 +803,10 @@ public class ConstraintLayout extends ViewGroup {
                 ((Placeholder) child).updatePostMeasure(this);
             }
         }
-        int i2 = this.mConstraintHelpers.size();
-        if (i2 > 0) {
-            for (int i3 = 0; i3 < i2; i3++) {
-                this.mConstraintHelpers.get(i3).updatePostMeasure(this);
+        int helperCount = this.mConstraintHelpers.size();
+        if (helperCount > 0) {
+            for (int i2 = 0; i2 < helperCount; i2++) {
+                this.mConstraintHelpers.get(i2).updatePostMeasure(this);
             }
         }
     }
@@ -1256,10 +1256,10 @@ public class ConstraintLayout extends ViewGroup {
                 }
             }
         }
-        int i10 = this.mConstraintHelpers.size();
-        if (i10 > 0) {
-            for (int i11 = 0; i11 < i10; i11++) {
-                this.mConstraintHelpers.get(i11).updatePostLayout(this);
+        int helperCount = this.mConstraintHelpers.size();
+        if (helperCount > 0) {
+            for (int i10 = 0; i10 < helperCount; i10++) {
+                this.mConstraintHelpers.get(i10).updatePostLayout(this);
             }
         }
     }

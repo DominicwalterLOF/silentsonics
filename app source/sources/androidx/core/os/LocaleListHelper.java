@@ -205,26 +205,26 @@ final class LocaleListHelper {
                 i++;
             }
         }
-        int i2 = inputLength + (topLocaleIndex == -1 ? 1 : 0);
-        Locale[] localeList = new Locale[i2];
+        int outputLength = inputLength + (topLocaleIndex == -1 ? 1 : 0);
+        Locale[] localeList = new Locale[outputLength];
         localeList[0] = (Locale) topLocale.clone();
         if (topLocaleIndex == -1) {
-            for (int i3 = 0; i3 < inputLength; i3++) {
-                localeList[i3 + 1] = (Locale) otherLocales.mList[i3].clone();
+            for (int i2 = 0; i2 < inputLength; i2++) {
+                localeList[i2 + 1] = (Locale) otherLocales.mList[i2].clone();
             }
         } else {
-            for (int i4 = 0; i4 < topLocaleIndex; i4++) {
-                localeList[i4 + 1] = (Locale) otherLocales.mList[i4].clone();
+            for (int i3 = 0; i3 < topLocaleIndex; i3++) {
+                localeList[i3 + 1] = (Locale) otherLocales.mList[i3].clone();
             }
-            for (int i5 = topLocaleIndex + 1; i5 < inputLength; i5++) {
-                localeList[i5] = (Locale) otherLocales.mList[i5].clone();
+            for (int i4 = topLocaleIndex + 1; i4 < inputLength; i4++) {
+                localeList[i4] = (Locale) otherLocales.mList[i4].clone();
             }
         }
         new StringBuilder();
         StringBuilder sb2 = sb;
-        for (int i6 = 0; i6 < i2; i6++) {
-            StringBuilder append = sb2.append(LocaleHelper.toLanguageTag(localeList[i6]));
-            if (i6 < i2 - 1) {
+        for (int i5 = 0; i5 < outputLength; i5++) {
+            StringBuilder append = sb2.append(LocaleHelper.toLanguageTag(localeList[i5]));
+            if (i5 < outputLength - 1) {
                 StringBuilder append2 = sb2.append(',');
             }
         }

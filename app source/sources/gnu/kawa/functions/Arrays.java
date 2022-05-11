@@ -135,26 +135,26 @@ public class Arrays {
                 empty = true;
             }
         }
-        int i2 = array3.rank();
+        int arank = array3.rank();
         int[] offsets = new int[rank];
         if (!empty) {
-            int[] work = new int[i2];
+            int[] work = new int[arank];
             offset0 = effectiveIndex(array3, proc, args, work);
-            int i3 = rank;
+            int i2 = rank;
             while (true) {
-                i3--;
-                if (i3 < 0) {
+                i2--;
+                if (i2 < 0) {
                     break;
                 }
-                int size2 = dimensions[i3];
-                int lo2 = lowBounds[i3];
+                int size2 = dimensions[i2];
+                int lo2 = lowBounds[i2];
                 if (size2 <= 1) {
-                    offsets[i3] = 0;
+                    offsets[i2] = 0;
                 } else {
-                    Object low2 = args[i3];
-                    args[i3] = IntNum.make(lo2 + 1);
-                    offsets[i3] = effectiveIndex(array3, proc, args, work) - offset0;
-                    args[i3] = low2;
+                    Object low2 = args[i2];
+                    args[i2] = IntNum.make(lo2 + 1);
+                    offsets[i2] = effectiveIndex(array3, proc, args, work) - offset0;
+                    args[i2] = low2;
                 }
             }
         } else {

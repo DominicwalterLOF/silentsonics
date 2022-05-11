@@ -116,11 +116,11 @@ public final class ColorStateListInflaterCompat {
                     }
                 }
                 int[] stateSpec2 = StateSet.trimStateSet(stateSpec, j);
-                int i4 = modulateColorAlpha(baseColor, alphaMod);
+                int color = modulateColorAlpha(baseColor, alphaMod);
                 if (listSize == 0 || stateSpec2.length == 0) {
-                    int defaultColor = i4;
+                    int defaultColor = color;
                 }
-                colorList = GrowingArrayUtils.append(colorList, listSize, i4);
+                colorList = GrowingArrayUtils.append(colorList, listSize, color);
                 stateSpecList = (int[][]) GrowingArrayUtils.append((T[]) stateSpecList, listSize, stateSpec2);
                 listSize++;
             }

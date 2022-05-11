@@ -74,12 +74,12 @@ public class Label {
         for (int i3 = 0; i3 < SP; i3++) {
             this.stackTypes[i3] = mergeTypes(this.stackTypes[i3], stack[i3]);
         }
-        int i4 = usedLocals < this.localTypes.length ? usedLocals : this.localTypes.length;
-        for (int i5 = 0; i5 < i4; i5++) {
-            mergeLocalType(i5, locals[i5]);
+        int min = usedLocals < this.localTypes.length ? usedLocals : this.localTypes.length;
+        for (int i4 = 0; i4 < min; i4++) {
+            mergeLocalType(i4, locals[i4]);
         }
-        for (int i6 = usedLocals; i6 < this.localTypes.length; i6++) {
-            this.localTypes[i6] = null;
+        for (int i5 = usedLocals; i5 < this.localTypes.length; i5++) {
+            this.localTypes[i5] = null;
         }
     }
 

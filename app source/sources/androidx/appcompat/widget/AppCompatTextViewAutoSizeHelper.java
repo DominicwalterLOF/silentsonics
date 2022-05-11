@@ -261,10 +261,10 @@ class AppCompatTextViewAutoSizeHelper {
         if (presetValuesLength == uniqueValidSizes.size()) {
             return presetValues;
         }
-        int i2 = uniqueValidSizes.size();
-        int[] cleanedUpSizes = new int[i2];
-        for (int i3 = 0; i3 < i2; i3++) {
-            cleanedUpSizes[i3] = uniqueValidSizes.get(i3).intValue();
+        int uniqueValidSizesLength = uniqueValidSizes.size();
+        int[] cleanedUpSizes = new int[uniqueValidSizesLength];
+        for (int i2 = 0; i2 < uniqueValidSizesLength; i2++) {
+            cleanedUpSizes[i2] = uniqueValidSizes.get(i2).intValue();
         }
         return cleanedUpSizes;
     }

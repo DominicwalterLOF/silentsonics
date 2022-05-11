@@ -1,13 +1,19 @@
 Signature-Version: 1.0
 Created-By: 1.0 (Android)
-SHA-256-Digest-Manifest: rfmIHalBqtYx5jJmgJ11DC1G9SyOHZ9RO/Plhy6kalc=
+SHA-256-Digest-Manifest: oT86+dM3FivE+HXVLSvlQ3XJ0dzGxFP1uCdcn/ysZTY=
 X-Android-APK-Signed: 2, 3
 
 Name: AndroidManifest.xml
-SHA-256-Digest: Ywo579tUds18ANi1/BVeVuHuZ5QFK3z6AvWEtStW3Ps=
+SHA-256-Digest: 3Z7+pgVSLJljxRJi9bSIxD4dz2HRdKK6T7bAGOosOvg=
 
 Name: assets/22000Hz_sine.wav
 SHA-256-Digest: 4tMT/x1/cMtIpqOuZdOydm8cJ13N63OTcchhp1axrdM=
+
+Name: assets/3dTile.png
+SHA-256-Digest: M0fH89OuhaO2lOwPX6YIvSA0JKXJqZex9DlR20ihkAk=
+
+Name: assets/61116-netsurf-radar-scan.json
+SHA-256-Digest: 7wu+15IlkbIT5v5/IiadfvHIoVBdCnlVlMjl2rLAdw8=
 
 Name: assets/806-search.json
 SHA-256-Digest: EIoqoGvdrLNIPIcVrP2Po2GHugeVXpLk2+ofjhbooUg=
@@ -64,13 +70,13 @@ Name: assets/search.json
 SHA-256-Digest: DDGDAuLY6m8EDs73poTN2MStAFlgehGjQgBMJg6VAPk=
 
 Name: classes.dex
-SHA-256-Digest: aXzO6bb1apWmMY5UcMTA6wkPtjjpaw3A1U+naqEiS3M=
+SHA-256-Digest: lypraJQbEfpx0Qi2cs83NhVxI5z1p8eOjDqZSGaOASU=
 
 Name: classes2.dex
 SHA-256-Digest: gPA4DJgISd3Ul0kipeKwSEuZvdNe797Xoj1vmFHX5L0=
 
 Name: classes3.dex
-SHA-256-Digest: oVhjcaBX4tb2LSJRaL1lcOpX+tIwAKNK4sx0DHV7B5U=
+SHA-256-Digest: KyOlTYWDZktZ7JLY4NltBDM39P8wuKsSkJ/cBrogqds=
 
 Name: classes4.dex
 SHA-256-Digest: vT9ntJm/TDC7HDXZ6Clorlnyad5CxxEmhN/QGI6KeWQ=

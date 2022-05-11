@@ -93,13 +93,13 @@ public class ConcatKeyDerivationFunction {
             }
             derivedByteOutputStream.write(digest, 0, digest.length);
         }
-        int i3 = ByteUtil.byteLength(keydatalen);
+        int keyDateLenInBytes = ByteUtil.byteLength(keydatalen);
         byte[] derivedKeyMaterial = derivedByteOutputStream.toByteArray();
         if (traceLog()) {
             log.trace("derived key material: {}", (Object) ByteUtil.toDebugString(derivedKeyMaterial));
         }
-        if (derivedKeyMaterial.length != i3) {
-            byte[] newKeyMaterial = ByteUtil.subArray(derivedKeyMaterial, 0, i3);
+        if (derivedKeyMaterial.length != keyDateLenInBytes) {
+            byte[] newKeyMaterial = ByteUtil.subArray(derivedKeyMaterial, 0, keyDateLenInBytes);
             if (traceLog()) {
                 log.trace("first {} bits of derived key material: {}", (Object) Integer.valueOf(keydatalen), (Object) ByteUtil.toDebugString(newKeyMaterial));
             }

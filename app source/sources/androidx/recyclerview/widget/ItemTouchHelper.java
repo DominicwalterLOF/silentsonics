@@ -1203,9 +1203,9 @@ public class ItemTouchHelper extends RecyclerView.ItemDecoration implements Recy
                 c.restoreToCount(count);
             }
             if (selected != null) {
-                int i3 = c.save();
+                int count2 = c.save();
                 onChildDraw(c, parent, selected, dX, dY, actionState, true);
-                c.restoreToCount(i3);
+                c.restoreToCount(count2);
             }
         }
 
@@ -1226,15 +1226,15 @@ public class ItemTouchHelper extends RecyclerView.ItemDecoration implements Recy
                 c.restoreToCount(count);
             }
             if (selected != null) {
-                int i3 = c.save();
+                int count2 = c.save();
                 onChildDrawOver(c, parent, selected, dX, dY, actionState, true);
-                c.restoreToCount(i3);
+                c.restoreToCount(count2);
             }
             boolean hasRunningAnimation = false;
-            for (int i4 = recoverAnimSize - 1; i4 >= 0; i4--) {
-                RecoverAnimation anim2 = recoverAnimationList.get(i4);
+            for (int i3 = recoverAnimSize - 1; i3 >= 0; i3--) {
+                RecoverAnimation anim2 = recoverAnimationList.get(i3);
                 if (anim2.mEnded && !anim2.mIsPendingCleanup) {
-                    RecoverAnimation remove = recoverAnimationList.remove(i4);
+                    RecoverAnimation remove = recoverAnimationList.remove(i3);
                 } else if (!anim2.mEnded) {
                     hasRunningAnimation = true;
                 }

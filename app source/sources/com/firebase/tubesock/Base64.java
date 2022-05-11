@@ -68,10 +68,10 @@ public class Base64 {
         }
         int s4 = sLen - eLen;
         if (s4 > 0) {
-            int i11 = ((sArr[eLen] & Ev3Constants.Opcode.TST) << 10) | (s4 == 2 ? (sArr[sLen - 1] & Ev3Constants.Opcode.TST) << 2 : 0);
-            dArr[dLen - 4] = CA[i11 >> 12];
-            dArr[dLen - 3] = CA[(i11 >>> 6) & 63];
-            dArr[dLen - 2] = s4 == 2 ? CA[i11 & 63] : '=';
+            int d6 = ((sArr[eLen] & Ev3Constants.Opcode.TST) << 10) | (s4 == 2 ? (sArr[sLen - 1] & Ev3Constants.Opcode.TST) << 2 : 0);
+            dArr[dLen - 4] = CA[d6 >> 12];
+            dArr[dLen - 3] = CA[(d6 >>> 6) & 63];
+            dArr[dLen - 2] = s4 == 2 ? CA[d6 & 63] : '=';
             dArr[dLen - 1] = '=';
         }
         return dArr;
@@ -262,10 +262,10 @@ public class Base64 {
         }
         int s4 = sLen - eLen;
         if (s4 > 0) {
-            int i11 = ((sArr[eLen] & Ev3Constants.Opcode.TST) << 10) | (s4 == 2 ? (sArr[sLen - 1] & Ev3Constants.Opcode.TST) << 2 : 0);
-            dArr[dLen - 4] = (byte) CA[i11 >> 12];
-            dArr[dLen - 3] = (byte) CA[(i11 >>> 6) & 63];
-            dArr[dLen - 2] = s4 == 2 ? (byte) CA[i11 & 63] : Ev3Constants.Opcode.MOVEF_16;
+            int d6 = ((sArr[eLen] & Ev3Constants.Opcode.TST) << 10) | (s4 == 2 ? (sArr[sLen - 1] & Ev3Constants.Opcode.TST) << 2 : 0);
+            dArr[dLen - 4] = (byte) CA[d6 >> 12];
+            dArr[dLen - 3] = (byte) CA[(d6 >>> 6) & 63];
+            dArr[dLen - 2] = s4 == 2 ? (byte) CA[d6 & 63] : Ev3Constants.Opcode.MOVEF_16;
             dArr[dLen - 1] = Ev3Constants.Opcode.MOVEF_16;
         }
         return dArr;

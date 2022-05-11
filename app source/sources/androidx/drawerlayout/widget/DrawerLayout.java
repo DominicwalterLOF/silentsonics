@@ -1508,9 +1508,9 @@ public class DrawerLayout extends ViewGroup {
                 }
             }
             if (!isDrawerOpen) {
-                int i4 = this.mNonDrawerViews.size();
-                for (int i5 = 0; i5 < i4; i5++) {
-                    View child2 = this.mNonDrawerViews.get(i5);
+                int nonDrawerViewsCount = this.mNonDrawerViews.size();
+                for (int i4 = 0; i4 < nonDrawerViewsCount; i4++) {
+                    View child2 = this.mNonDrawerViews.get(i4);
                     if (child2.getVisibility() == 0) {
                         child2.addFocusables(views, direction, focusableMode);
                     }

@@ -38,7 +38,6 @@ import kawa.lib.lists;
 import kawa.lib.misc;
 import kawa.lib.strings;
 import kawa.standard.Scheme;
-import kawa.standard.require;
 import org.jose4j.jws.AlgorithmIdentifiers;
 
 /* compiled from: stake.yail */
@@ -260,7 +259,7 @@ public class stake extends Form implements Runnable {
         this.lookup$Mnhandler = moduleMethod15;
         new ModuleMethod(frame4, 17, (Object) null, 0);
         ModuleMethod moduleMethod20 = moduleMethod16;
-        moduleMethod20.setProperty("source-location", "/tmp/runtime4335152769950135233.scm:615");
+        moduleMethod20.setProperty("source-location", "/tmp/runtime7437719223159864720.scm:615");
         lambda$Fn1 = moduleMethod20;
         new ModuleMethod(frame4, 18, "$define", 0);
         this.$define = moduleMethod17;
@@ -287,66 +286,46 @@ public class stake extends Form implements Runnable {
     }
 
     public final void run(CallContext $ctx) {
-        Throwable th;
         String obj;
-        Throwable th2;
         Object obj2;
         Consumer $result = $ctx.consumer;
-        Object find = require.find("com.google.youngandroid.runtime");
-        Object obj3 = find;
-        try {
-            ((Runnable) find).run();
-            this.$Stdebug$Mnform$St = Boolean.FALSE;
-            this.form$Mnenvironment = Environment.make(misc.symbol$To$String(Lit0));
-            Object[] objArr = new Object[2];
-            objArr[0] = misc.symbol$To$String(Lit0);
-            Object[] objArr2 = objArr;
-            objArr2[1] = "-global-vars";
-            FString stringAppend = strings.stringAppend(objArr2);
-            FString fString = stringAppend;
-            if (stringAppend == null) {
-                obj = null;
-            } else {
-                obj = fString.toString();
-            }
-            this.global$Mnvar$Mnenvironment = Environment.make(obj);
-            stake = null;
-            this.form$Mnname$Mnsymbol = Lit0;
-            this.events$Mnto$Mnregister = LList.Empty;
-            this.components$Mnto$Mncreate = LList.Empty;
-            this.global$Mnvars$Mnto$Mncreate = LList.Empty;
-            this.form$Mndo$Mnafter$Mncreation = LList.Empty;
-            Object find2 = require.find("com.google.youngandroid.runtime");
-            Object obj4 = find2;
-            try {
-                ((Runnable) find2).run();
-                if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-                    Object andCoerceProperty$Ex = runtime.setAndCoerceProperty$Ex(Lit0, Lit3, Lit4, Lit5);
-                    Object andCoerceProperty$Ex2 = runtime.setAndCoerceProperty$Ex(Lit0, Lit6, "5573807689433088", Lit7);
-                    Object andCoerceProperty$Ex3 = runtime.setAndCoerceProperty$Ex(Lit0, Lit8, "SilentSonics", Lit7);
-                    Object andCoerceProperty$Ex4 = runtime.setAndCoerceProperty$Ex(Lit0, Lit9, Lit10, Lit5);
-                    Object andCoerceProperty$Ex5 = runtime.setAndCoerceProperty$Ex(Lit0, Lit11, Lit12, Lit5);
-                    Object andCoerceProperty$Ex6 = runtime.setAndCoerceProperty$Ex(Lit0, Lit13, AlgorithmIdentifiers.NONE, Lit7);
-                    Object andCoerceProperty$Ex7 = runtime.setAndCoerceProperty$Ex(Lit0, Lit14, Boolean.FALSE, Lit15);
-                    Object andCoerceProperty$Ex8 = runtime.setAndCoerceProperty$Ex(Lit0, Lit16, "AppTheme.Light.DarkActionBar", Lit7);
-                    Values.writeValues(runtime.setAndCoerceProperty$Ex(Lit0, Lit17, "stake", Lit7), $result);
-                } else {
-                    new Promise(lambda$Fn2);
-                    addToFormDoAfterCreation(obj2);
-                }
-                runtime.initRuntime();
-            } catch (ClassCastException e) {
-                ClassCastException classCastException = e;
-                Throwable th3 = th2;
-                new WrongType(classCastException, "java.lang.Runnable.run()", 1, obj4);
-                throw th3;
-            }
-        } catch (ClassCastException e2) {
-            ClassCastException classCastException2 = e2;
-            Throwable th4 = th;
-            new WrongType(classCastException2, "java.lang.Runnable.run()", 1, obj3);
-            throw th4;
+        runtime.$instance.run();
+        this.$Stdebug$Mnform$St = Boolean.FALSE;
+        this.form$Mnenvironment = Environment.make(misc.symbol$To$String(Lit0));
+        Object[] objArr = new Object[2];
+        objArr[0] = misc.symbol$To$String(Lit0);
+        Object[] objArr2 = objArr;
+        objArr2[1] = "-global-vars";
+        FString stringAppend = strings.stringAppend(objArr2);
+        FString fString = stringAppend;
+        if (stringAppend == null) {
+            obj = null;
+        } else {
+            obj = fString.toString();
         }
+        this.global$Mnvar$Mnenvironment = Environment.make(obj);
+        stake = null;
+        this.form$Mnname$Mnsymbol = Lit0;
+        this.events$Mnto$Mnregister = LList.Empty;
+        this.components$Mnto$Mncreate = LList.Empty;
+        this.global$Mnvars$Mnto$Mncreate = LList.Empty;
+        this.form$Mndo$Mnafter$Mncreation = LList.Empty;
+        runtime.$instance.run();
+        if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
+            Object andCoerceProperty$Ex = runtime.setAndCoerceProperty$Ex(Lit0, Lit3, Lit4, Lit5);
+            Object andCoerceProperty$Ex2 = runtime.setAndCoerceProperty$Ex(Lit0, Lit6, "5573807689433088", Lit7);
+            Object andCoerceProperty$Ex3 = runtime.setAndCoerceProperty$Ex(Lit0, Lit8, "SilentSonics", Lit7);
+            Object andCoerceProperty$Ex4 = runtime.setAndCoerceProperty$Ex(Lit0, Lit9, Lit10, Lit5);
+            Object andCoerceProperty$Ex5 = runtime.setAndCoerceProperty$Ex(Lit0, Lit11, Lit12, Lit5);
+            Object andCoerceProperty$Ex6 = runtime.setAndCoerceProperty$Ex(Lit0, Lit13, AlgorithmIdentifiers.NONE, Lit7);
+            Object andCoerceProperty$Ex7 = runtime.setAndCoerceProperty$Ex(Lit0, Lit14, Boolean.FALSE, Lit15);
+            Object andCoerceProperty$Ex8 = runtime.setAndCoerceProperty$Ex(Lit0, Lit16, "AppTheme.Light.DarkActionBar", Lit7);
+            Values.writeValues(runtime.setAndCoerceProperty$Ex(Lit0, Lit17, "stake", Lit7), $result);
+        } else {
+            new Promise(lambda$Fn2);
+            addToFormDoAfterCreation(obj2);
+        }
+        runtime.initRuntime();
     }
 
     static Object lambda3() {

@@ -1,10 +1,16 @@
 Manifest-Version: 1.0
 
 Name: AndroidManifest.xml
-SHA-256-Digest: nVc4Wf/cZDl5i4dohRj1eZShXlX+oBvVr+jYMWpRde8=
+SHA-256-Digest: im++7sHkKSU76s4Q5zg/iIiNErKi/rP5PMxgcjwwjUQ=
 
 Name: assets/22000Hz_sine.wav
 SHA-256-Digest: nsA1181mKhfBXpax3oLWshwHoBUgJAKAwz9yEnXRFto=
+
+Name: assets/3dTile.png
+SHA-256-Digest: MFQEz/4/9ehv82X36GIiYYQfHp021+DZxcIEWMDzPcQ=
+
+Name: assets/61116-netsurf-radar-scan.json
+SHA-256-Digest: qMmELtH9cOe4GPxNA7DtLXL1c2+HwruMwgnfggXMI3s=
 
 Name: assets/806-search.json
 SHA-256-Digest: bwJjaBZqopsqBwiDxN99FtugJXCo2TNrKUu7OqfWl0A=
@@ -61,13 +67,13 @@ Name: assets/search.json
 SHA-256-Digest: /92uO1kIV+hTGIzYariGg/0T49bS2eBPXG9TfqjtRFw=
 
 Name: classes.dex
-SHA-256-Digest: PxWHr0XhrlaBVFN0sa9XpqqOcxT3JdesE3uaU58Iego=
+SHA-256-Digest: H8uI1p3Fj85lQprYhiK29z/ivbt1gz3cEPjDMnEsm5Y=
 
 Name: classes2.dex
 SHA-256-Digest: dicVtmq1FPhfZBf2+b0hVCK0gxpJQTOkjWKydxCtr2c=
 
 Name: classes3.dex
-SHA-256-Digest: jWKPq8d3wXCp0u031xMjd9c5Pc1QQ9XTcn/RRQIe4p4=
+SHA-256-Digest: C0Ac/D/UbFvvSQXYvInUHw51luuZFL2sF+bJA3ZnFzI=
 
 Name: classes4.dex
 SHA-256-Digest: UAbyvjCTwqcA6xJGFfzRPS8fPx045ODT0hxap8PhMXc=

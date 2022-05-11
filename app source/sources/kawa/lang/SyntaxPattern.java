@@ -549,23 +549,23 @@ public class SyntaxPattern extends Pattern implements Externalizable {
                             new StringBuilder();
                             Expression syntaxError2 = tr.syntaxError(sb.append("duplicated pattern variable ").append(pattern).toString());
                         }
-                        int i2 = patternNames.size();
+                        int j2 = patternNames.size();
                         patternNames.addElement(pattern);
                         boolean matchCar = context == 'P';
                         StringBuffer append3 = patternScope.patternNesting.append((char) ((nesting << 1) + (matchCar ? 1 : 0)));
                         Declaration decl = patternScope.addDeclaration(pattern);
                         decl.setLocation(tr);
                         tr.push(decl);
-                        addInt(program2, (i2 << 3) | (matchCar ? 7 : 3));
+                        addInt(program2, (j2 << 3) | (matchCar ? 7 : 3));
                         return;
                     }
                 } while (!literalIdentifierEq(pattern, scope1, literal, scope2));
-                int i3 = SyntaxTemplate.indexOf(literals2, pattern);
-                if (i3 < 0) {
-                    i3 = literals2.size();
+                int i2 = SyntaxTemplate.indexOf(literals2, pattern);
+                if (i2 < 0) {
+                    i2 = literals2.size();
                     literals2.addElement(pattern);
                 }
-                addInt(program2, (i3 << 3) | 2);
+                addInt(program2, (i2 << 3) | 2);
                 return;
             } else if (pattern == LList.Empty) {
                 StringBuffer append4 = program2.append(8);
@@ -575,12 +575,12 @@ public class SyntaxPattern extends Pattern implements Externalizable {
                 pattern = LList.makeList((FVector) pattern);
                 context = 'V';
             } else {
-                int i4 = SyntaxTemplate.indexOf(literals2, pattern);
-                if (i4 < 0) {
-                    i4 = literals2.size();
+                int i3 = SyntaxTemplate.indexOf(literals2, pattern);
+                if (i3 < 0) {
+                    i3 = literals2.size();
                     literals2.addElement(pattern);
                 }
-                addInt(program2, (i4 << 3) | 2);
+                addInt(program2, (i3 << 3) | 2);
                 return;
             }
         }

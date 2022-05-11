@@ -278,7 +278,7 @@ public abstract class BaseLayer implements DrawingContent, BaseKeyframeAnimation
     }
 
     public void draw(Canvas canvas, Matrix matrix2, int i) {
-        int i2;
+        int opacity;
         Canvas canvas2 = canvas;
         Matrix parentMatrix = matrix2;
         int parentAlpha = i;
@@ -291,16 +291,16 @@ public abstract class BaseLayer implements DrawingContent, BaseKeyframeAnimation
         L.beginSection("Layer#parentMatrix");
         this.matrix.reset();
         this.matrix.set(parentMatrix);
-        for (int i3 = this.parentLayers.size() - 1; i3 >= 0; i3--) {
-            boolean preConcat = this.matrix.preConcat(this.parentLayers.get(i3).transform.getMatrix());
+        for (int i2 = this.parentLayers.size() - 1; i2 >= 0; i2--) {
+            boolean preConcat = this.matrix.preConcat(this.parentLayers.get(i2).transform.getMatrix());
         }
         float endSection2 = L.endSection("Layer#parentMatrix");
         if (this.transform.getOpacity() == null) {
-            i2 = 100;
+            opacity = 100;
         } else {
-            i2 = this.transform.getOpacity().getValue().intValue();
+            opacity = this.transform.getOpacity().getValue().intValue();
         }
-        int alpha = (int) ((((((float) parentAlpha) / 255.0f) * ((float) i2)) / 100.0f) * 255.0f);
+        int alpha = (int) ((((((float) parentAlpha) / 255.0f) * ((float) opacity)) / 100.0f) * 255.0f);
         if (hasMatteOnThisLayer() || hasMasksOnThisLayer()) {
             L.beginSection("Layer#computeBounds");
             getBounds(this.rect, this.matrix, false);
@@ -382,7 +382,7 @@ public abstract class BaseLayer implements DrawingContent, BaseKeyframeAnimation
                     this.maskBoundsRect.set(Math.min(this.maskBoundsRect.left, this.tempMaskBoundsRect.left), Math.min(this.maskBoundsRect.top, this.tempMaskBoundsRect.top), Math.max(this.maskBoundsRect.right, this.tempMaskBoundsRect.right), Math.max(this.maskBoundsRect.bottom, this.tempMaskBoundsRect.bottom));
                 }
             }
-            if (rect2.intersect(this.maskBoundsRect) == 0) {
+            if (!rect2.intersect(this.maskBoundsRect)) {
                 rect2.set(0.0f, 0.0f, 0.0f, 0.0f);
             }
         }

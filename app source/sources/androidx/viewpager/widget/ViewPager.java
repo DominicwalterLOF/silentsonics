@@ -1572,20 +1572,20 @@ public class ViewPager extends ViewGroup {
                 }
             }
         }
-        int i2 = (width - paddingLeft) - paddingRight;
-        for (int i3 = 0; i3 < count; i3++) {
-            View child2 = getChildAt(i3);
+        int childWidth = (width - paddingLeft) - paddingRight;
+        for (int i2 = 0; i2 < count; i2++) {
+            View child2 = getChildAt(i2);
             if (child2.getVisibility() != 8) {
                 LayoutParams lp2 = (LayoutParams) child2.getLayoutParams();
                 if (!lp2.isDecor) {
                     ItemInfo infoForChild = infoForChild(child2);
                     ItemInfo ii = infoForChild;
                     if (infoForChild != null) {
-                        int childLeft3 = paddingLeft + ((int) (((float) i2) * ii.offset));
+                        int childLeft3 = paddingLeft + ((int) (((float) childWidth) * ii.offset));
                         int childTop2 = paddingTop;
                         if (lp2.needsMeasure) {
                             lp2.needsMeasure = false;
-                            child2.measure(View.MeasureSpec.makeMeasureSpec((int) (((float) i2) * lp2.widthFactor), Declaration.MODULE_REFERENCE), View.MeasureSpec.makeMeasureSpec((height - paddingTop) - paddingBottom, Declaration.MODULE_REFERENCE));
+                            child2.measure(View.MeasureSpec.makeMeasureSpec((int) (((float) childWidth) * lp2.widthFactor), Declaration.MODULE_REFERENCE), View.MeasureSpec.makeMeasureSpec((height - paddingTop) - paddingBottom, Declaration.MODULE_REFERENCE));
                         }
                         child2.layout(childLeft3, childTop2, childLeft3 + child2.getMeasuredWidth(), childTop2 + child2.getMeasuredHeight());
                     }

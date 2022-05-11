@@ -133,11 +133,11 @@ public class Char implements Comparable, Externalizable {
                 do {
                     i2--;
                     if (i2 < 0) {
-                        int i3 = name.length();
-                        if (i3 > 1 && name.charAt(0) == 'u') {
+                        int len = name.length();
+                        if (len > 1 && name.charAt(0) == 'u') {
                             int value2 = 0;
                             int pos = 1;
-                            while (pos != i3) {
+                            while (pos != len) {
                                 int dig = Character.digit(name.charAt(pos), 16);
                                 if (dig >= 0) {
                                     value2 = (value2 << 4) + dig;
@@ -146,7 +146,7 @@ public class Char implements Comparable, Externalizable {
                             }
                             return value2;
                         }
-                        if (i3 == 3 && name.charAt(1) == '-' && ((ch = name.charAt(0)) == 'c' || ch == 'C')) {
+                        if (len == 3 && name.charAt(1) == '-' && ((ch = name.charAt(0)) == 'c' || ch == 'C')) {
                             return name.charAt(2) & 31;
                         }
                         return -1;

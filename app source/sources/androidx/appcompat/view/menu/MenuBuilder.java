@@ -270,8 +270,8 @@ public class MenuBuilder implements SupportMenu {
                     ((SubMenuBuilder) item.getSubMenu()).restoreActionViewStates(states);
                 }
             }
-            int i2 = states.getInt(EXPANDED_ACTION_VIEW_ID);
-            if (i2 > 0 && (itemToExpand = findItem(i2)) != null) {
+            int expandedId = states.getInt(EXPANDED_ACTION_VIEW_ID);
+            if (expandedId > 0 && (itemToExpand = findItem(expandedId)) != null) {
                 boolean expandActionView = itemToExpand.expandActionView();
             }
         }

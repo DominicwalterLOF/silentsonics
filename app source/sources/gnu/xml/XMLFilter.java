@@ -2046,8 +2046,8 @@ public class XMLFilter implements DocumentHandler, ContentHandler, SourceLocator
             hash = i3;
         }
         int hash2 = prefixHash ^ hash;
-        int i5 = hash2 & this.mappingTableMask;
-        MappingInfo first = this.mappingTable[i5];
+        int index = hash2 & this.mappingTableMask;
+        MappingInfo first = this.mappingTable[index];
         MappingInfo mappingInfo2 = first;
         while (true) {
             MappingInfo info = mappingInfo2;
@@ -2067,7 +2067,7 @@ public class XMLFilter implements DocumentHandler, ContentHandler, SourceLocator
                     info2.local = str.intern();
                 }
                 info2.nextInBucket = first;
-                this.mappingTable[i5] = first;
+                this.mappingTable[index] = first;
                 return info2;
             } else if (hash2 == info.tagHash && info.match(data, start, length)) {
                 return info;

@@ -39,10 +39,10 @@ public class CommentConstructor extends MethodProc {
             while (true) {
                 Object arg = ctx.getNextArg(endMarker);
                 if (arg == endMarker) {
-                    int i2 = sbuf.length();
-                    char[] buf = new char[i2];
-                    sbuf.getChars(0, i2, buf, 0);
-                    out.writeComment(buf, 0, i2);
+                    int len = sbuf.length();
+                    char[] buf = new char[len];
+                    sbuf.getChars(0, len, buf, 0);
+                    out.writeComment(buf, 0, len);
                     NodeConstructor.popNodeContext(saved, ctx);
                     return;
                 }
