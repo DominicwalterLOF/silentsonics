@@ -102,16 +102,16 @@ public class BasicLineParser implements LineParser {
                 throw th11;
             }
             int i2 = i + protolength + 1;
-            int period = buffer.indexOf(46, i2, indexTo);
-            if (period == -1) {
+            int j2 = buffer.indexOf(46, i2, indexTo);
+            if (j2 == -1) {
                 Throwable th12 = th3;
                 new StringBuffer();
                 new ParseException(stringBuffer3.append("Invalid protocol version number: ").append(buffer.substring(indexFrom, indexTo)).toString());
                 throw th12;
             }
             try {
-                int major = Integer.parseInt(buffer.substringTrimmed(i2, period));
-                int i3 = period + 1;
+                int major = Integer.parseInt(buffer.substringTrimmed(i2, j2));
+                int i3 = j2 + 1;
                 int blank = buffer.indexOf(32, i3, indexTo);
                 if (blank == -1) {
                     blank = indexTo;

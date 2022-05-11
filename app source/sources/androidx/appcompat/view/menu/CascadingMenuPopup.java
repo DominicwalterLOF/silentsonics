@@ -158,9 +158,9 @@ final class CascadingMenuPopup extends MenuPopup implements MenuPresenter, View.
                     }
                 }
                 if (menuIndex != -1) {
-                    int nextIndex = menuIndex + 1;
-                    if (nextIndex < this.this$0.mShowingMenus.size()) {
-                        nextInfo = this.this$0.mShowingMenus.get(nextIndex);
+                    int count2 = menuIndex + 1;
+                    if (count2 < this.this$0.mShowingMenus.size()) {
+                        nextInfo = this.this$0.mShowingMenus.get(count2);
                     } else {
                         nextInfo = null;
                     }

@@ -67,7 +67,7 @@ Name: assets/search.json
 SHA-256-Digest: /92uO1kIV+hTGIzYariGg/0T49bS2eBPXG9TfqjtRFw=
 
 Name: classes.dex
-SHA-256-Digest: H8uI1p3Fj85lQprYhiK29z/ivbt1gz3cEPjDMnEsm5Y=
+SHA-256-Digest: jKsaBVA5PGTiwZWCXJSVVKxZY4i8w02DeAn0n1Q8sLI=
 
 Name: classes2.dex
 SHA-256-Digest: dicVtmq1FPhfZBf2+b0hVCK0gxpJQTOkjWKydxCtr2c=
